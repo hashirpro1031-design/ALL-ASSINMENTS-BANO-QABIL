@@ -1,0 +1,165 @@
+/* General Styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: linear-gradient(to right, #0c66e6, #388ea1);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+header h1 {
+  font-size: 42px;
+  margin: 0;
+}
+
+header p {
+  font-size: 18px;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #222;
+  text-align: center;
+  padding: 12px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 16px;
+}
+
+nav a:hover {
+  color: azure;
+}
+
+/* Hero Section with Background Image */
+.hero {
+  height: 90vh;
+  background-image: url("https://images.unsplash.com/photo-1502602898657-3e91760cbb34");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Dark Overlay for Better Text Visibility */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Hero Content */
+.hero-content {
+  position: relative;
+  color: white;
+  text-align: center;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.hero-content h2 {
+  font-size: 40px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin: 15px 0;
+}
+
+/* Button */
+.hero-content button {
+  padding: 12px 25px;
+  border: none;
+  background-color: #00d2ff;
+  color: black;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.hero-content button:hover {
+  background-color: white;
+}
+
+/* Highlights Section */
+.highlights {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.highlights h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+/* Cards Layout */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: white;
+  width: 250px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  color: #042450;
+}
+
+/* Contact Section */
+.contact {
+  background-color:antiquewhite;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 30px;
+  color: #042450;
+}
+
+.contact p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.contact-info {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 25px 10px;
+}
+
+footer p {
+  margin: 8px 0;
+  font-size: 15px;
+}
